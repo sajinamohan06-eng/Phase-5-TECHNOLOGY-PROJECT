@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM-FE User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IBM-FE User Registration</h1>
+            <p>Join our community and unlock exclusive features</p>
+        </header>
+        
+        <div class="registration-form" id="registrationForm">
+            <h2 class="form-title">Create Your Account</h2>
+            
+            <form id="userForm">
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="firstName" class="required">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+                            <div class="error-message" id="firstNameError">First name is required</div>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="lastName" class="required">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+                            <div class="error-message" id="lastNameError">Last name is required</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="required">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="password" class="required">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Create a password">
+                            <div class="error-message" id="passwordError">Password must be at least 8 characters</div>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="confirmPassword" class="required">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+                            <div class="error-message" id="confirmPasswordError">Passwords do not match</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                            <div class="error-message" id="phoneError">Please enter a valid phone number</div>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country">
+                                <option value="">Select your country</option>
+                                <option value="usa">United States</option>
+                                <option value="canada">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="australia">Australia</option>
+                                <option value="germany">Germany</option>
+                                <option value="france">France</option>
+                                <option value="japan">Japan</option>
+                                <option value="india">India</option>
+                                <option value="brazil">Brazil</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter your job title">
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms" class="required">I agree to the Terms of Service and Privacy Policy</label>
+                </div>
+                <div class="error-message" id="termsError">You must accept the terms and conditions</div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Subscribe to our newsletter for updates</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Register Now</button>
+            </form>
+        </div>
+        
+        <div class="success-page" id="successPage">
+            <div class="success-icon">✓</div>
+            <h2 class="success-title">Registration Successful!</h2>
+            <p class="success-message">Thank you for registering with IBM-FE. Your account has been created successfully.</p>
+            <button class="back-btn" id="backBtn">Register Another User</button>
+        </div>
+        
+        <footer>
+            <p>IBM-FE User Registration System &copy; 2023. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
